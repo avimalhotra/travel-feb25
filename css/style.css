@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*,::before,::after{margin: 0; box-sizing: border-box;}
+a{ text-decoration: none;}
+button{ cursor: pointer; padding: 0;}
+:disabled{ cursor: not-allowed;}
+img{ vertical-align: bottom;}
+ul{ list-style: none; padding: 0;}
+.img-resp{ width: 100%; height: auto; }
+
+
+
+
+html{ font-size: 15px; --ff: "Montserrat", serif; --yellow:#ffdd00; }
+body{ font: 16px/1.25 var(--ff);}
+
+.container{ max-width: 1240px; margin: auto; padding: 0 1rem;}
+.row{ display: grid; grid-template-columns: repeat(12, 1fr); gap: 2rem;}
+.col-1{grid-column: span 1;}
+.col-2{grid-column: span 2;}
+.col-3{grid-column: span 3;}
+.col-4{grid-column: span 4;}
+.col-5{grid-column: span 5;}
+.col-6{grid-column: span 6;}
+.col-7{grid-column: span 7;}
+.col-8{grid-column: span 8;}
+.col-9{grid-column: span 9;}
+.col-10{grid-column: span 10;}
+.col-11{grid-column: span 11;}
+.col-12{grid-column: span 12;}
+.gap-y-2{ row-gap: 4rem; }
+.flex{ display: flex;}
+.justify-space-bet{ justify-content: space-between;}
+.justify-center{ justify-content: center;}
+.justify-right{ justify-content: right;}
+.align-center{ align-items: center;}
+
+
+.wrap-1{ background: url(../img/bg1.webp) no-repeat center/cover;}
+header{ background: #0006; color: #fff; white-space: nowrap;}
+.topnav{ border-bottom: 3px solid #fff6; line-height: 67px;}
+.topnav a{ color: inherit;}
+.topnav a span{ color: var(--yellow);}
+.contact li:first-child{ margin-right: 100px; }
+.menu li{ margin: 0 16px;}
+.social{ margin-right: 100px;}
+.social li{ margin: 0 10px;}
+.brand{ color: inherit; font: 500;}
+.brand span{ color: var(--yellow); letter-spacing: -10px;}
+nav li{ margin: 0 15px;}
+nav a{ color: inherit; line-height: 74px; display: block; padding: 0 10px; border-bottom: 3px solid transparent;}
+nav a.active{ border-block-color: var(--yellow); }
+.banner{ color: #fff; text-align: center; padding: 100px 200px 170px;}
+.lg{ font: 900 75px var(--ff); margin-bottom: 20px;}
+.sm{ font: 900 40px var(--ff);}
+.caption{ font-size: 18px; margin: 50px 0;}
+.banner a{ display: inline-block; width: 216px; line-height: 58px; background: var(--yellow); color: #000;}
+
+
+/* responsive */
+@media screen and (max-width:1260px){
+    html{ font-size: 13px;}
+}
+
+@media screen and (max-width:980px){
+    .col-t-1{grid-column: span 1;}
+    .col-t-2{grid-column: span 2;}
+    .col-t-3{grid-column: span 3;}
+    .col-t-4{grid-column: span 4;}
+    .col-t-5{grid-column: span 5;}
+    .col-t-6{grid-column: span 6;}
+    .col-t-7{grid-column: span 7;}
+    .col-t-8{grid-column: span 8;}
+    .col-t-9{grid-column: span 9;}
+    .col-t-10{grid-column: span 10;}
+    .col-t-11{grid-column: span 11;}
+    .col-t-12{grid-column: span 12;} 
+    .contact li:first-child{ margin-right: 20px;}
+    .social{ margin-right: 20px;}
+    nav li{ margin: 0 1px;}
+    nav a{ margin: 0 2px;}
+}
+
+
+@media screen and (max-width:767px){
+    html{ font-size: 12px;}
+    .col-m-6{grid-column: span 6;}
+    .col-m-12{grid-column: span 12;}
+}
+
+@media screen and (max-width:460px){
+    .col-p-4{grid-column: span 4;}
+    .col-p-6{grid-column: span 6;}
+    .col-p-12{grid-column: span 12;}
+}
