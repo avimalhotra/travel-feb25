@@ -5,6 +5,7 @@ button{ cursor: pointer; padding: 0;}
 :disabled{ cursor: not-allowed;}
 img{ vertical-align: bottom;}
 ul{ list-style: none; padding: 0;}
+label{ display: inline-block;}
 .img-resp{ width: 100%; height: auto; }
 
 
@@ -14,7 +15,7 @@ html{ font-size: 15px; --ff: "Montserrat", serif; --yellow:#ffdd00; }
 body{ font: 16px/1.25 var(--ff);}
 
 .container{ max-width: 1240px; margin: auto; padding: 0 1rem;}
-.row{ display: grid; grid-template-columns: repeat(12, 1fr); gap: 2rem;}
+.row{ display: grid; grid-template-columns: repeat(12, 1fr); gap: 0 2rem;}
 .col-1{grid-column: span 1;}
 .col-2{grid-column: span 2;}
 .col-3{grid-column: span 3;}
@@ -33,6 +34,7 @@ body{ font: 16px/1.25 var(--ff);}
 .justify-center{ justify-content: center;}
 .justify-right{ justify-content: right;}
 .align-center{ align-items: center;}
+.text-center{ text-align: center; }
 
 
 .wrap-1{ background: url(../img/bg1.webp) no-repeat center/cover;}
@@ -44,7 +46,8 @@ header{ background: #0006; color: #fff; white-space: nowrap;}
 .menu li{ margin: 0 16px;}
 .social{ margin-right: 100px;}
 .social li{ margin: 0 10px;}
-.brand{ color: inherit; font: 500;}
+.brand{ color: inherit; }
+.brand h1{ font: 500 33px var(--ff);}
 .brand span{ color: var(--yellow); letter-spacing: -10px;}
 nav li{ margin: 0 15px;}
 nav a{ color: inherit; line-height: 74px; display: block; padding: 0 10px; border-bottom: 3px solid transparent;}
@@ -54,11 +57,24 @@ nav a.active{ border-block-color: var(--yellow); }
 .sm{ font: 900 40px var(--ff);}
 .caption{ font-size: 18px; margin: 50px 0;}
 .banner a{ display: inline-block; width: 216px; line-height: 58px; background: var(--yellow); color: #000;}
+.mob-menu{ display: none;}
+
+
+.wrap-2{ padding: 78px 0 82px; background: repeating-linear-gradient(135deg, #f0d839 0,#f0d839 8px, #888a 8px, #888a 9px); }
+h2{ font: 900 37px/53px var(--ff);}
+.wrap-2 .flex{ gap: 0 10px; align-items: end; flex-flow: wrap; }
+.wrap-2 .column-2x{ flex: 1 0 210px; }
+.wrap-2 .column-1x{ flex: 1 0 120px;}
+.wrap-2 input{ width: 100%; height: 40px; padding: 13px; border: none; background: #fff; border-radius: 5px;}
+.wrap-2 button{ width: 100%; height: 40px; padding: 13px; border: none; color: #fff; background: #4b4b4b; border-radius: 5px;}
+
 
 
 /* responsive */
 @media screen and (max-width:1260px){
     html{ font-size: 13px;}
+    .banner{ padding: 100px 100px 170px;}
+    .wrap-2 button{ margin-top: 20px; }
 }
 
 @media screen and (max-width:980px){
@@ -85,10 +101,20 @@ nav a.active{ border-block-color: var(--yellow); }
     html{ font-size: 12px;}
     .col-m-6{grid-column: span 6;}
     .col-m-12{grid-column: span 12;}
+    .wrap-1 .topnav .flex{ justify-content: center;}
+    .topnav{ line-height: 40px;}
+    nav{ display: none;}
+    .mob-menu{ display: block; width: 70px; height: 30px; background: none; border: 2px solid var(--yellow); border-radius: 6px; float: right; margin-top: 13px;}
+    .mob-menu span{ display: block; margin: 5px 10px; height: 2px; background: var(--yellow);}
+    .banner{ padding-inline: 50px;}
 }
 
 @media screen and (max-width:460px){
     .col-p-4{grid-column: span 4;}
     .col-p-6{grid-column: span 6;}
     .col-p-12{grid-column: span 12;}
+    .menu li{ margin: 0 10px;}
+    .banner{ padding:100px 10px 170px;}
+    .lg{ font-size: 55px;}
+    .sm{ font-size: 22px;}
 }
