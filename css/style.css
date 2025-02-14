@@ -70,11 +70,53 @@ h2{ font: 900 37px/53px var(--ff);}
 
 
 
+.wrap-3{ background: url(../img/bg2.webp) no-repeat left top/50%, url(../img/bg3.webp) no-repeat right top/50%; }
+.about{ padding: 85px 4rem;}
+.about h2{ font-weight: normal;}
+.about ul{ margin: 1rem 0;  }
+.about li{ position: relative; padding-left: 40px; margin: 2rem 0; }
+.about li span{ position: absolute; left: 0; font-size: 2rem; color: #00a4ff; }
+
+
+
+.wrap-4{ padding: 70px 0;}
+.wrap-4 :is(h2, h3){ font-weight: normal;}
+.wrap-4 span.fa{ color: #00a4ff; font-size: 55px;}
+.services{ margin: 20px 0;}
+.icon{ flex: 0 0 130px;}
+.text{ flex: 0 1 auto;}
+
+
+.wrap-5{ background: url(../img/bg4.webp) no-repeat center top, #00a4ff; padding: 85px 0;}
+.wrap-5 h2{ font-weight: normal;}
+.budget{ background: #fff; border-radius: 1rem; padding: 35px 0; text-align: center; margin-bottom: 2rem;}
+.budget > span.fa{ font-size: 67px; }
+.budget .price{ background: #f0d839; font-size: 2rem; line-height: 64px; margin: 0 -7px; }
+.budget ul{ margin: 1rem 100px 1rem 80px; }
+.budget li{ position: relative; padding-left: 40px; margin: 2rem 0; }
+.budget li span{ position: absolute; left: 0; font-size: 17px; color: #00a4ff; }
+
+
+
+.wrap-6{ padding: 85px 0;}
+.fwn{ font-weight: normal;}
+.agent{ padding: 75px;}
+.tabs{ display: flex; border: 2px solid #00a4ff; text-align: center;}
+.tabs li{ flex: 1 0 33.3%;}
+.tabs li a{ display: block; line-height: 93px; color: #373737; position: relative;}
+.tabs li:nth-child(1) a{ background: #00a4ff; color: #fff;}
+.tabs li:nth-child(2) a{ background: #e4e4e4;}
+.tabs li:nth-child(1) a::after{ content: ''; display: block; width: 23px; background: #00a4ff; position: absolute; top: 0; left: 100%; bottom: 0; clip-path: polygon(0 0, 100% 50%, 0 100%); z-index: 1; }
+.tabs li:nth-child(2) a::after{ content: ''; display: block; width: 23px; background: #e4e4e4; position: absolute; top: 0; left: 100%; bottom: 0; clip-path: polygon(0 0, 100% 50%, 0 100%); }
+
+
 /* responsive */
 @media screen and (max-width:1260px){
     html{ font-size: 13px;}
     .banner{ padding: 100px 100px 170px;}
     .wrap-2 button{ margin-top: 20px; }
+    .about{ padding: 15px 2rem;}
+    .budget ul{ margin: 1rem 50px;}
 }
 
 @media screen and (max-width:980px){
@@ -94,6 +136,8 @@ h2{ font: 900 37px/53px var(--ff);}
     .social{ margin-right: 20px;}
     nav li{ margin: 0 1px;}
     nav a{ margin: 0 2px;}
+    .wrap-3{ background: url(../img/bg3.webp) no-repeat center/cover; }
+    .budget ul{ margin: 1rem 10px;}
 }
 
 
